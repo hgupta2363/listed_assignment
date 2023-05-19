@@ -1,0 +1,14 @@
+.activity_container{
+    padding:30px 40px 30px 40px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 40px;
+    height: 290px;
+}
+.activity_container_header{
+    display:flex;
+    justify-content: space-between;
+}
+.activity_graph{
+    height: 290px; 
+}

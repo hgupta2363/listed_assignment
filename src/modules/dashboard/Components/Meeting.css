@@ -1,0 +1,81 @@
+.meeting_container{
+padding :30px 30px 40px 40px;
+background-color: white;
+border-radius: 20px;
+
+
+}
+.meeting_container_heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.heading_text{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+
+color: #000000;
+}
+.see_all_text{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+
+/* Secondary Text */
+
+color: #858585;
+}
+.meetings_content{
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+    margin-top: 28px;
+}
+.meeting_content{
+    display: flex;
+    flex-direction: column;
+   gap:5px;
+   align-items: flex-start;
+}
+.meeting_title{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+
+color: #666666;
+}
+.meeting_time{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+
+/* icon */
+
+color: #999999;
+}
+.meeting_vanue{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+
+/* icon */
+
+color: #999999;
+}

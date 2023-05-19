@@ -1,25 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import AuthScreen from './modules/auth/AuthScreen';
+import { GoogleLogin, GoogleOAuthProvider } from '@react-oauth/google';
+import Dashboard from './modules/dashboard/Dashboard';
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <GoogleOAuthProvider clientId='728282040948-en3gaiktsulsvsnf7420mjbp9ctuj5if.apps.googleusercontent.com'>
+      <Dashboard />
+    </GoogleOAuthProvider>
   );
 }
-
-export default App;

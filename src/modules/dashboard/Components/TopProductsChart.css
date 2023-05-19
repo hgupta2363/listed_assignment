@@ -1,0 +1,71 @@
+.pie_container{
+    padding:30px 30px 30px 40px;
+    display:flex;
+    flex-direction: row;
+    gap:43px;
+
+    border-radius: 20px;
+  
+
+    background-color: white;
+}
+.pie_left_container{
+    display: flex;
+    flex-direction: column;
+}
+.chart_heading{
+  text-align: start;
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+
+color: #000000;
+
+}
+.pie_chart{
+    padding-left: 14px;
+    width:146px;
+    height: 146px;
+    margin-top: 22px;
+    
+
+
+
+}
+.pie_right_container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap:21px
+}
+.top_product{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+
+}
+.product_value{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+color: #000000;
+/* Secondary Text */
+
+color: #858585;
+margin-top: 5px;
+}
+
+.round {
+    width:11px;
+    height:11px;
+    border-radius: 50%;
+  
+}
