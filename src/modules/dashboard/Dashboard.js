@@ -7,11 +7,17 @@ import GroupOutlinedIcon from '@mui/icons-material/GroupOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import DashBoardResultPoint from './Components/DashBoardResultPoint';
 import revenue from '../../assets/revenue.png';
+import transaction from '../../assets/transaction.png';
+import like from '../../assets/like.png';
+import users from '../../assets/users.png';
 import { fetchDashboardData } from '../../api';
 import TopProductsChart from './Components/TopProductsChart';
 import Meetings from './Components/Meetings';
 import Activities from './Components/Activities';
 import notification from '../../assets/notification.png';
+import userAvatar from '../../assets/userAvatar.png';
+const iconUrls = [revenue, transaction, like, users];
+
 export default function Dashboard() {
   const [loading, setLoading] = useState(false);
   const [dashboardData, setDashboardData] = useState();
@@ -82,6 +88,7 @@ export default function Dashboard() {
                   type='search'
                 />
                 <img src={notification} alt='' className='noti_image_style' />
+                <img src={userAvatar} alt='' className='user_image_style' />
               </div>
             </div>
             <Grid
@@ -93,13 +100,13 @@ export default function Dashboard() {
                 width: '100%',
               }}
             >
-              {dashboardData?.resultPoint.map((point) => (
+              {dashboardData?.resultPoint.map((point, index) => (
                 <Grid xs={12} sm={12} md={2.6}>
                   <DashBoardResultPoint
                     color={point?.color ?? ''}
                     firstText={point?.first_text ?? ''}
                     secondText={point?.second_text ?? ''}
-                    imageUrl={revenue}
+                    imageUrl={iconUrls[index]}
                   />
                 </Grid>
               ))}

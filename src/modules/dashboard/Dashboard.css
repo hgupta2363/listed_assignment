@@ -97,8 +97,14 @@ border: solid 0px;
 padding-left: 15px;
 }
 .noti_image_style{
-    height:20px;
-    width:20px
+    height:25px;
+    width:25px;
+    padding-top: 5px;
+}
+.user_image_style{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
 }
 .dashboard_heading_text{
     font-family: 'Montserrat';
@@ -106,6 +112,7 @@ font-style: normal;
 font-weight: 700;
 font-size: 28px;
 line-height: 29px;
+padding-top: 3px;
 
 color: #000000;
 }
