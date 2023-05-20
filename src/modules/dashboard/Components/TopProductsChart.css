@@ -6,7 +6,7 @@
 
     border-radius: 20px;
   
-
+   
     background-color: white;
 }
 .pie_left_container{
@@ -68,4 +68,11 @@ margin-top: 5px;
     height:11px;
     border-radius: 50%;
   
+}
+@media screen and (max-width: 900px) {
+    .pie_container{
+        flex-direction: column;
+   
+
+    }
 }
